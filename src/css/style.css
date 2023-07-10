@@ -1,0 +1,75 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    min-height: 415px;
+    display: grid;
+    grid: "video-destaque propaganda" 72px
+    "video-destaque video-1" 72px
+    "descricao video-2" 72px
+    "visualizacao video-3" 72px 
+    "visualizacao ." 15px / auto 270px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.video-destaque h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo {
+    grid-area: video-destaque;
+    width: 100%;
+    height: 217px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.descricao {
+    grid-area: visualizacao;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descricao .paragrafo {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.propaganda {
+    grid-area: propaganda;
+    min-width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-1 {
+    grid-area: video-1;
+}
+
+.item-2 {
+    grid-area: video-2;
+}
+
+.item-3 {
+    grid-area: video-3;
+}
+
+.video {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
