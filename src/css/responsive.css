@@ -18,3 +18,17 @@
     }
 
 }
+
+
+@media(max-width:394px) {
+    .container {
+      max-width: 360px;
+    }
+
+    .propaganda,
+    .video {
+        width: 300px;
+}
+}
+
+
