@@ -20,19 +20,20 @@ body {
 
 .video-destaque {
    grid-area: video-destaque;
-}
-
-.video-destaque h1 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
+   gap: 10px;
+   display: flex;
+   flex-direction: column;
 }
 
 .logo {
     width: 100%;
     height: 217px;
-    margin-bottom: 10px;
     cursor: pointer;
+}
+
+.video-destaque h1 {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .propaganda {
